@@ -4,6 +4,7 @@ Result looks like this:
 (Simple html page)
 
 Calculator
+
 Number 1: 
 1
 
