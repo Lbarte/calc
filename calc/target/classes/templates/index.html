@@ -1,0 +1,20 @@
+<!doctype html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started with Calculator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Calculator</h1>
+<form action="#" th:action="@{/index}" th:object="${index}" method="post">
+    <p>Number 1: <input type="text" th:field="*{n1}" /></p>
+    <p th:text="${index.op}" />
+    <p>Number 2: <input type="text" th:field="*{n2}" /></p>
+    <p><input type="submit" value="Result" />
+    <p th:text="'sum= ' + ${index.sum}" />
+    <p th:text="'subtraction= ' + ${index.subtraction}" />
+    <p th:text="'multiplication= ' + ${index.multiplication}" />
+    <p th:text="'division= ' + ${index.division}" />
+</form>
+</body>
+</html>
